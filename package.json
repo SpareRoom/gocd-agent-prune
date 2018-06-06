@@ -26,6 +26,8 @@
     "nock": "^9.3.0"
   },
   "dependencies": {
+    "netmask": "^1.0.6",
+    "range_check": "^1.4.0",
     "request": "^2.87.0"
   }
 }

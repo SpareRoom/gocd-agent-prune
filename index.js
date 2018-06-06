@@ -1,3 +1,3 @@
-const app = require("./lib");
+const app = require("./lib")();
 
 app.start();

@@ -1,0 +1,15 @@
+version: '2'
+services:
+  hubot:
+    image: gcr.io/spareroom-development-tools/gocd-prune:latest
+    volumes:
+      - /etc/timezone:/etc/timezone:ro
+    environment:
+      HUBOT_SLACK_TOKEN: "${HUBOT_SLACK_TOKEN}"
+      HUBOT_GOCD_HOST: "${HUBOT_GOCD_HOST}"
+      HUBOT_GOCD_API_PORT: 8153
+      HUBOT_GOCD_API_PROTOCOL: "http"
+      HUBOT_GOCD_USERNAME: "${HUBOT_GOCD_USERNAME}"
+      HUBOT_GOCD_PASSWORD: "${HUBOT_GOCD_PASSWORD}"
+      HUBOT_GOCD_EXTERNAL_LINK: "https://gocd.spareroom.net"
+      TZ: "Europe/London"

@@ -5,10 +5,9 @@ services:
     volumes:
       - /etc/timezone:/etc/timezone:ro
     environment:
-      gocdprune__host: "${GOCD_HOST}:8153"
+      gocdprune__host: "http://${GOCD_HOST}:8153"
       gocdprune__username: "${GOCD_USERNAME}"
       gocdprune__password: "${GOCD_PASSWORD}"
       gocdprune__managedIpRanges: "172.0.0.0/8"
       gocdprune__cleanUpIntervalMs: 300000
       TZ: "Europe/London"
-
